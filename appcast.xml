@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Hermey</title>
+    <link>https://github.com/macblizzard/hermey/releases/tag/v0.1.611</link>
+    <description>Hermey for macOS</description>
+    <language>en</language>
+    <item>
+      <title>Hermey 0.1.611</title>
+      <pubDate>Sat, 21 Nov 2026 16:29:19 +0000</pubDate>
+      <sparkle:version>611</sparkle:version>
+      <sparkle:shortVersionString>0.1.611</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/macblizzard/hermey/releases/tag/v0.1.611</link>
+      <description>### Added<br/>- **Arrange bot categories on the phone.** Long-press a group heading, or use the new ⋯ menu at its trailing<br/>  edge; the verbs grey out at the ends. The host stores the whole arrangement, so the order is the same on<br/>  every device.<br/><br/>### Fixed<br/>- **A refused category move no longer looks like a successful one.** The Mac&#x27;s menu called the move through<br/>  `try?`, so a write the host refused simply appeared not to happen. It now says &quot;Category not changed&quot;.<br/>- **The vision model row shows the configured model instead of &quot;auto&quot;.** Hermey read the flat<br/>  `auxiliary.vision_provider` key while the engine and both shipped configs use the nested<br/>  `auxiliary.vision.provider`, so the setting always looked unset.</description>
+      <enclosure url="https://macblizzard.github.io/hermey-downloads/Hermey-macOS-0.1.611.dmg" length="12899176" type="application/octet-stream"
+                 sparkle:edSignature="qAD3zngVWqLcWwupsC0Fdbx8AUGnNL8yXPj22MhBhSzzjiQQCeCEZMYczA1aaUXRcEHkj78tB7zsinwHcMJ1Aw=="/>
+    </item>
+  </channel>
+</rss>

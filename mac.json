@@ -1,0 +1,12 @@
+{
+  "app": "hermey",
+  "platform": "macos",
+  "version": "0.1.611",
+  "build": "611",
+  "size": 12899176,
+  "sha256": "93d84be9ab7ed2b230bbcc9881a19f389bdedbd0fe43be52a41dbc267d521c4f",
+  "url": "https://macblizzard.github.io/hermey-downloads/Hermey-macOS-0.1.611.dmg",
+  "publishedAt": "2026-11-21T16:29:19Z",
+  "notes": "### Added\n- **Arrange bot categories on the phone.** Long-press a group heading, or use the new \u22ef menu at its trailing\n  edge; the verbs grey out at the ends. The host stores the whole arrangement, so the order is the same on\n  every device.\n\n### Fixed\n- **A refused category move no longer looks like a successful one.** The Mac's menu called the move through\n  `try?`, so a write the host refused simply appeared not to happen. It now says \"Category not changed\".\n- **The vision model row shows the configured model instead of \"auto\".** Hermey read the flat\n  `auxiliary.vision_provider` key while the engine and both shipped configs use the nested\n  `auxiliary.vision.provider`, so the setting always looked unset.",
+  "minimumSystemVersion": "14.0"
+}
