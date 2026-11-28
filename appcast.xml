@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Hermey</title>
+    <link>https://github.com/macblizzard/hermey/releases/tag/v0.1.700</link>
+    <description>Hermey for macOS</description>
+    <language>en</language>
+    <item>
+      <title>Hermey 0.1.700</title>
+      <pubDate>Sat, 28 Nov 2026 10:23:46 +0000</pubDate>
+      <sparkle:version>700</sparkle:version>
+      <sparkle:shortVersionString>0.1.700</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/macblizzard/hermey/releases/tag/v0.1.700</link>
+      <description>### Fixed<br/>- **The socket stays warm.** Idle connections were being cut at ~14 m 32 s–15 m 15 s by the proxy in front of<br/>  the host — no close frame, no ping, and `hermeyd` has no idle timer — so the app reconnected roughly every<br/>  quarter of an hour and one replay aborted with &quot;connection reset&quot;. A 240-second keepalive now goes out only<br/>  when the wire is idle, and an event replay survives one aborted send.<br/>- **Offline no longer spams the log.** The cache sweep is skipped entirely while the transport is down, and<br/>  `transcript refresh failed: not connected` is logged once per disconnect instead of on every sweep.<br/>- **`highest=` in the update log is bounded.** A stale record (1011 from an old numbering) is rewritten to a<br/>  plausible value once and announced, so the diagnostic reads honestly.</description>
+      <enclosure url="https://macblizzard.github.io/hermey-downloads/Hermey-macOS-0.1.700.dmg" length="21273649" type="application/octet-stream"
+                 sparkle:edSignature="Vqw+XaV0nD1OstQdpe7G3OPjPb0or9u3DmCbK9y0ECEfYnO+XFn0xR3wKv/ldMSPgvBXKpZp2P0gnGIkbD4hCw=="/>
+    </item>
+  </channel>
+</rss>

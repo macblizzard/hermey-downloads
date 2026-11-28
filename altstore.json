@@ -1,0 +1,54 @@
+{
+  "name": "Hermey",
+  "identifier": "dev.hermey.app.source",
+  "subtitle": "Your Hermes bots, on your phone",
+  "description": "Native client for a self-hosted Hermes Agent. Every bot (Hermes profile) is reachable through one gateway; approvals, streaming replies and tool output appear in the conversation. Builds are unsigned and must be re-signed by your sideloading app.",
+  "iconURL": "https://raw.githubusercontent.com/macblizzard/hermey/main/icon-512.png",
+  "headerURL": "https://raw.githubusercontent.com/macblizzard/hermey/main/icon-512.png",
+  "tintColor": "#9A9AA0",
+  "featuredApps": [
+    "dev.hermey.app.mobile"
+  ],
+  "apps": [
+    {
+      "name": "Hermey",
+      "bundleIdentifier": "dev.hermey.app.mobile",
+      "developerName": "Hermey",
+      "subtitle": "Your Hermes bots, on your phone",
+      "localizedDescription": "Chats with every Hermes bot, streaming replies, tool cards, inline approvals and per-device pairing.",
+      "iconURL": "https://raw.githubusercontent.com/macblizzard/hermey/main/icon-512.png",
+      "tintColor": "#9A9AA0",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.700",
+          "buildVersion": "700",
+          "date": "2026-11-28T10:23:46Z",
+          "localizedDescription": "### Fixed\n- **The socket stays warm.** Idle connections were being cut at ~14 m 32 s\u201315 m 15 s by the proxy in front of\n  the host \u2014 no close frame, no ping, and `hermeyd` has no idle timer \u2014 so the app reconnected roughly every\n  quarter of an hour and one replay aborted with \"connection reset\". A 240-second keepalive now goes out only\n  when the wire is idle, and an event replay survives one aborted send.\n- **Offline no longer spams the log.** The cache sweep is skipped entirely while the transport is down, and\n  `transcript refresh failed: not connected` is logged once per disconnect instead of on every sweep.\n- **`highest=` in the update log is bounded.** A stale record (1011 from an old numbering) is rewritten to a\n  plausible value once and announced, so the diagnostic reads honestly.",
+          "downloadURL": "https://github.com/macblizzard/hermey/releases/download/v0.1.700/Hermey-0.1.700-b700.ipa",
+          "size": 6479477,
+          "minOSVersion": "17.0",
+          "sha256": "0cd5a3da2aa12b2ad25424dee9191704ca321e5fddfeafb7fee427b5ea56fa4a"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Scan the pairing code shown by your Hermes host to connect this device.",
+          "NSLocalNetworkUsageDescription": "Hermes connects to your own Hermes host over your private network."
+        }
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Hermes 0.1.700 (700)",
+      "identifier": "hermes-0.1.700-700",
+      "caption": "### Fixed\n- **The socket stays warm.** Idle connections were being cut at ~14 m 32 s\u201315 m 15 s by the proxy in front of\n  the host \u2014 no close frame, no ping, and `hermeyd` has no idle timer \u2014 so the app reconnected roughly every\n  quarter of an hour and one replay aborted with \"connection reset\". A 240-second keepalive now goes out only\n  when the wire is idle, and an event replay survives one aborted send.\n- **Offline no longer spams the log.** The cache sweep is skipped entirely while the transport is down, and\n  `transcript refresh failed: not connected` is logged once per disconnect instead of on every sweep.\n- **`highest=` in the update log is bounded.** A stale record (1011 from an old numbering) is rewritten to a\n  plausible value once and announced, so the diagnostic reads honestly.",
+      "date": "2026-11-28T10:23:46Z",
+      "tintColor": "#9A9AA0"
+    }
+  ],
+  "sourceURL": "https://github.com/macblizzard/hermey/releases/latest/download/altstore.json"
+}

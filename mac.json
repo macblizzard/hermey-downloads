@@ -1,0 +1,12 @@
+{
+  "app": "hermey",
+  "platform": "macos",
+  "version": "0.1.700",
+  "build": "700",
+  "size": 21273649,
+  "sha256": "b0018a70a8eadf386009a31014ad8daaa0b8e9cdc551caff18b8e564ccce6de0",
+  "url": "https://macblizzard.github.io/hermey-downloads/Hermey-macOS-0.1.700.dmg",
+  "publishedAt": "2026-11-28T10:23:46Z",
+  "notes": "### Fixed\n- **The socket stays warm.** Idle connections were being cut at ~14 m 32 s\u201315 m 15 s by the proxy in front of\n  the host \u2014 no close frame, no ping, and `hermeyd` has no idle timer \u2014 so the app reconnected roughly every\n  quarter of an hour and one replay aborted with \"connection reset\". A 240-second keepalive now goes out only\n  when the wire is idle, and an event replay survives one aborted send.\n- **Offline no longer spams the log.** The cache sweep is skipped entirely while the transport is down, and\n  `transcript refresh failed: not connected` is logged once per disconnect instead of on every sweep.\n- **`highest=` in the update log is bounded.** A stale record (1011 from an old numbering) is rewritten to a\n  plausible value once and announced, so the diagnostic reads honestly.",
+  "minimumSystemVersion": "14.0"
+}
